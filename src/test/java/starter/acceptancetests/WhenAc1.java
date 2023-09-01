@@ -7,8 +7,7 @@ import net.serenitybdd.screenplay.annotations.CastMember;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.openqa.selenium.By;
-import starter.actions.Forminput.EnterData;
+;
 import starter.actions.navigation.NavigatTo;
 
 @ExtendWith(SerenityJUnit5Extension.class)

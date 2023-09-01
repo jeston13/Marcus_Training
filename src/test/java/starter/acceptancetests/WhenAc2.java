@@ -8,7 +8,10 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import starter.actions.Forminput.EnterData;
 import starter.actions.navigation.NavigatTo;
+import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
 
+@ExtendWith(SerenityJUnit5Extension.class)
 public class WhenAc2 {
 
     @CastMember
