@@ -43,7 +43,7 @@ class WhenExer3 {
         actor.attemptsTo(
                 NavigatTo.theSearchHomePage(),
                 EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
-                EnterData.forminput("rjk24322@poverts.com", By.id("reg_email")),
+                EnterData.forminput("rjk2432212345@poverts.com", By.id("reg_email")),
                 EnterData.forminput("rjk24322@", By.id("reg_password")),
                 EnterData.CLickELement(By.cssSelector("input[value='Register']")),
                 EnterData.CLickELement(
