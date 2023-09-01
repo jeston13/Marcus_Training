@@ -36,7 +36,9 @@ class WhenExer2 {
                 EnterData.forminput("pehohi7311@poverts.com@10",By.id("password")),
 //
 //                Evaluate.javascript("logIn()")
-                EnterData.CLickELement(By.cssSelector("input[value='Login']"))
+                EnterData.CLickELement(By.cssSelector("input[value='Login']")),
+                EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/resources/']"))
+
                 // Find(By.id("nameofuser"))
 //                Click.on(Button.withText("logout"))
                 // Click.on(By.cssSelector("css=button[value='Login in'"))
@@ -44,6 +46,21 @@ class WhenExer2 {
 
 
     }
+
+    @Test
+    @DisplayName("Should be able Register")
+    void register(){
+        actor.attemptsTo(
+                NavigatTo.theSearchHomePage(),
+                EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
+                EnterData.forminput("rjk24222@poverts.com",By.id("reg_email")),
+                EnterData.forminput("rjk24222@",By.id("reg_password")),
+                EnterData.CLickELement(By.cssSelector("input[value='Register']")),
+                EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/customer-logout/']"))
+        );
+    }
+
+
 
 
 }
