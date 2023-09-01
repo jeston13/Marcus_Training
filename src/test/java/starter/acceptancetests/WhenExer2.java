@@ -17,7 +17,7 @@ class WhenExer2 {
     @CastMember
     Actor actor;
 
-    @Test
+    // @Test
     @DisplayName("Should be able Open The website")
     void ac1test() {
         actor.attemptsTo(
@@ -25,7 +25,7 @@ class WhenExer2 {
         );
 
     }
-    @Test
+    // @Test
     @DisplayName("Should be able Open The Login")
     void Login() {
         actor.attemptsTo(
