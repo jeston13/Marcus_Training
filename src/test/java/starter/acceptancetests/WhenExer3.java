@@ -28,9 +28,6 @@ class WhenExer3 {
                 EnterData.forminput("pehohi7311@poverts.com",By.id("username")),
                 EnterData.forminput("pehohi7311@poverts.com@10",By.id("password")),
                 EnterData.CLickELement(By.cssSelector("input[value='Login']")),
-                //WaitUntil.the(Target.the("Resources Link").located(By.linkText("Resources")), isClickable()),
-                //Click.on(Target.the("Resources Link").located(By.linkText("Resources")))
-                //EnterData.CLickELement(new By.ByPartialLinkText("resources"))
                 Click.on(Link.containing("resources")),
                 Click.on(Button.withText("GO TO RESOURCE")),
                 Click.on(Button.withText("add to cart")),
@@ -38,8 +35,6 @@ class WhenExer3 {
 
         );
 
-
     }
-
 
 }
