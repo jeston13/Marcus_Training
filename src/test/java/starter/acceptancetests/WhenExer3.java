@@ -1,4 +1,5 @@
 package starter.acceptancetests;
+
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actions.Click;
@@ -12,7 +13,6 @@ import org.openqa.selenium.By;
 import starter.actions.Forminput.EnterData;
 import starter.actions.navigation.NavigatTo;
 
-
 @ExtendWith(SerenityJUnit5Extension.class)
 class WhenExer3 {
 
@@ -25,8 +25,8 @@ class WhenExer3 {
         actor.attemptsTo(
                 NavigatTo.theSearchHomePage(),
                 EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
-                EnterData.forminput("pehohi7311@poverts.com",By.id("username")),
-                EnterData.forminput("pehohi7311@poverts.com@10",By.id("password")),
+                EnterData.forminput("pehohi7311@poverts.com", By.id("username")),
+                EnterData.forminput("pehohi7311@poverts.com@10", By.id("password")),
                 EnterData.CLickELement(By.cssSelector("input[value='Login']")),
                 Click.on(Link.containing("resources")),
                 Click.on(Button.withText("GO TO RESOURCE")),
@@ -35,6 +35,19 @@ class WhenExer3 {
 
         );
 
+    }
+
+    @Test
+    @DisplayName("Should be able Register")
+    void register() {
+        actor.attemptsTo(
+                NavigatTo.theSearchHomePage(),
+                EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
+                EnterData.forminput("rjk24322@poverts.com", By.id("reg_email")),
+                EnterData.forminput("rjk24322@", By.id("reg_password")),
+                EnterData.CLickELement(By.cssSelector("input[value='Register']")),
+                EnterData.CLickELement(
+                        By.cssSelector("a[href='https://lifechangers.org/my-account/customer-logout/']")));
     }
 
 }
