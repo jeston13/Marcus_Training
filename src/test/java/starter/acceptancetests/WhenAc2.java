@@ -22,12 +22,12 @@ public class WhenAc2 {
         actor.attemptsTo(
                 NavigatTo.theSearchHomePage(),
 
-                EnterData.CLickELement(By.id("login2")),
-                EnterData.forminput("pehohi7311@poverts.com",By.id("loginusername")),
-                EnterData.forminput("pehohi7311@poverts.com",By.id("loginpassword")),
-
-                Evaluate.javascript("logIn()")
-//                EnterData.CLickELement(By.id("logout2"))
+                EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
+                EnterData.forminput("pehohi7311@poverts.com",By.id("username")),
+                EnterData.forminput("pehohi7311@poverts.com@10",By.id("password")),
+//
+//                Evaluate.javascript("logIn()")
+                EnterData.CLickELement(By.cssSelector("input[value='Login']"))
                 // Find(By.id("nameofuser"))
 //                Click.on(Button.withText("logout"))
                 // Click.on(By.cssSelector("css=button[value='Login in'"))
