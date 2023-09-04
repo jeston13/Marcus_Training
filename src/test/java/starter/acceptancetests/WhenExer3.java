@@ -62,7 +62,7 @@ class WhenExer3 {
         }
     }
 
-    // @Test
+    @Test
     @DisplayName("Should be able Open The website")
     void ac1test() {
         actor.attemptsTo(
@@ -84,10 +84,11 @@ class WhenExer3 {
         for (String url : urls) {
             actor.attemptsTo(EnterData.CLickELement(By.cssSelector("a[href='" + url + "'")));
             List<By> arr = getList(url);
-            for(By id : arr){
-                vr.verifyIfExists(id,actor);
+            for (By id : arr) {
+                vr.verifyIfExists(id, actor);
             }
         }
+    }
 
     @Test
     @DisplayName("Should be able Open The Login and add to cart")
@@ -113,7 +114,7 @@ class WhenExer3 {
         actor.attemptsTo(
                 NavigatTo.theSearchHomePage(),
                 EnterData.CLickELement(By.cssSelector("a[href='https://lifechangers.org/my-account/'")),
-                EnterData.forminput("rjk2432212345@poverts.com", By.id("reg_email")),
+                EnterData.forminput("aqt2432212345qwe@poverts.com", By.id("reg_email")),
                 EnterData.forminput("rjk24322@", By.id("reg_password")),
                 EnterData.CLickELement(By.cssSelector("input[value='Register']")),
                 EnterData.CLickELement(
